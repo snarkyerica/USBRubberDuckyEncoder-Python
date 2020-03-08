@@ -3,7 +3,7 @@
 #
 # converts DuckyScript into usable hexfiles
 #
-# written by and copyright (C) Erica Garcia [athenaorerica] <me@athenas.space> 2019
+# written by and copyright (C) Erica Garcia [ericathesnark] <me@athenas.space> 2020
 # licensed under the MIT license <http://mit.athenas.space>
 
 import sys, os, argparse
@@ -189,7 +189,7 @@ def encodeToFile(inStr, fileDest):
                 last_instruction[0] = last_instruction[0].strip()
                 if len(last_instruction) == 2:
                     last_instruction[1] = last_instruction[1].strip()
-                
+
             else:
                 last_instruction = instructions[i].split(" ", 1)
                 last_instruction[0] = last_instruction[0].strip()
